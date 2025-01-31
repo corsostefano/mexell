@@ -3,214 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mexell - Sitio en Construcción</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f7fc;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .hero-section {
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(240, 240, 240, 0.7)), url('https://via.placeholder.com/1920x1080');
-            background-size: cover;
-            background-position: center;
-            color: #004085;
-            padding: 120px 20px;
-            text-align: center;
-            border-bottom: 4px solid #004085;
-        }
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        .hero-section p {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-        .hero-section .construction-message {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #e3f2fd;
-            border: 1px solid #bbdefb;
-            border-radius: 8px;
-            display: inline-block;
-            text-align: left;
-            max-width: 650px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        .hero-section .construction-message i {
-            color: #0d6efd;
-            margin-right: 15px;
-        }
-        .about-section {
-            padding: 80px 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: -60px;
-            z-index: 1;
-        }
-        .about-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .about-section p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: #555;
-        }
-        .contact-section {
-            padding: 70px 20px;
-            background-color: #f9fafb;
-        }
-        .contact-section h2 {
-            font-size: 2.2rem;
-            font-weight: 600;
-            color: #004085;
-        }
-        .contact-card {
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            background-color: #fff;
-            transition: all 0.3s ease-in-out;
-        }
-        .contact-card:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        .contact-card h5 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #004085;
-        }
-        .contact-card ul li {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
-            color: #555;
-        }
-        .contact-card ul li i {
-            color: #0d6efd;
-            margin-right: 10px;
-        }
-        .map-container {
-            height: 300px;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #004085;
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-        }
-        footer p {
-            font-size: 1rem;
-        }
-    </style>
+    <link rel="shortcut icon" href="./img/logo_mexell_favicon.png" type="image/x-icon">
+    <title>MEXELL S.A / Metalúrgica De Precisión</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    
 </head>
 <body>
-
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="container">
-        <h1>Mexell</h1>
-        <p>Líderes en Argentina en ingeniería, diseño y fabricación de alta precisión bajo estándares internacionales.</p>
-        <div class="construction-message">
-            <i class="fas fa-tools"></i>
-            <strong>Sitio web en construcción:</strong> Estamos trabajando en una actualización para ofrecerte una experiencia renovada.
+    <!-- NAV -->
+     <nav>
+        <div class="logo">
+            <a href="#"><img class="img_logo" src="img/mexell_logo.png" alt=""></a>
         </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section class="about-section">
-    <div class="container">
-        <h2 class="text-center mb-4">¿Quiénes somos?</h2>
-        <p class="text-center">Somos expertos en ofrecer soluciones integrales diseñadas para maximizar la producción y mejorar la eficiencia operativa (OEE) en una amplia variedad de industrias. Nuestro enfoque abarca desde la fabricación de piezas complejas hasta la implementación de sistemas de cambio rápido de formato (SMED) y servicios de mantenimiento industrial. Con más de siete décadas de experiencia y el respaldo de nuestras dos plantas productivas, garantizamos agilidad, innovación y resultados excepcionales para nuestros clientes.</p>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section class="contact-section">
-    <div class="container">
-        <h2 class="text-center mb-5 text-uppercase font-weight-bold">Contacto Inmediato</h2>
-        <div class="row justify-content-center">
-            <!-- Teléfonos -->
-            <div class="col-12 col-md-5 mb-4 mb-md-0">
-                <div class="card contact-card p-4">
-                    <h5 class="text-center mb-3">Teléfonos</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-phone-alt"></i> +54 11 4542 7353</li>
-                        <li><i class="fas fa-phone-alt"></i> +54 11 4545 2373</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Correos Electrónicos -->
-            <div class="col-12 col-md-5">
-                <div class="card contact-card p-4">
-                    <h5 class="text-center mb-3">Correos Electrónicos</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-envelope"></i> mexell@mexell.com</li>
-                        
-                    </ul>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><button>Empezar <i class="ri-arrow-right-long-line"></i></button></li>
+        </ul>
+        <div class="nav_infos">
+            <div class="nav_info">
+                <img src="img/call.png" alt="">
+                <div class="nav_det">
+                    <p>Llámanos ahora</p>
+                    <h3>+54 11 4542 7353</h3>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <div class="bars">
+            <i class="ri-menu-2-fill"></i>
+        </div>
+     </nav>
+     <!-- HERO HEADER -->
+      <header>
+        
+        <div class="hero_header">
+            <div class="hero_side_content">
+              <h4>Excelencia Argentina</h4>
+              <div class="hero_side_line"></div>
+                <div class="hero_side_icons">
+                    <i class="ri-global-fill"></i>
+                    <i class="ri-trophy-fill"></i>
+                    <i class="ri-settings-5-fill"></i>
+                </div>
+            </div>
+            <div class="hero_content">
+                <div class="title">
+                    <div class="title_line"></div>
+                    <h3>Bienvenido</h3>
+                </div>
+                <h1>MEXELL <span>S.A</span> </h1>
+                <h3>Metalúrgica De <span>Precisión</span></h3>
+                <p>"Innovación y precisión metalúrgica con más de 70 años de excelencia."</p>
+                <div class="hero_btns">
 
-<!-- Sección de Direcciones -->
-<section class="contact-section bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 text-uppercase font-weight-bold">Nuestras Direcciones</h2>
-        <div class="row">
-            <!-- Contenedor de la Planta Principal -->
-            <div class="col-12 col-md-6 mb-4">
-                <div class="card contact-card p-4 shadow-lg rounded-lg">
-                    <h5 class="font-weight-bold">Planta Principal</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt text-primary mr-2"></i> Machain 4729 (C1430DZI), CABA, ARGENTINA</li> 
-                    </ul>
-                    <!-- Mapa de Machain 4729 -->
-                    <div class="map-container rounded-lg shadow-sm overflow-hidden">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1417207754694!2d-58.49596712526707!3d-34.54996695465978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6e9d8de44d9%3A0x8812aef97279551b!2sMacha%C3%ADn%204729%2C%20C1430%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sco!4v1738001817383!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button>Descubre más <i class="ri-arrow-right-long-line"></i></button>
+                 
+                </div>
+            </div>  
+            <div class="hero_img">
+                <img src="img/descarga__2_-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="hero_client">
+            <h2>Confian en nosotros</h2>
+            <img src="img/confianza_escudo.png" alt="">
+        </div>
+        <div class="swiper logoSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/logo-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-6.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-7.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-8.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-9.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-10.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-11.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-12.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-13.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/logo-14.png" alt="">
+                </div>
+            </div>
+        </div>
+      </header>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <div class="about_top">
+                <div class="about_tl">
+                    <div class="title">
+                        <div class="title_line"></div>
+                        <h3>¿Quiénes Somos?</h3>
+                    </div>
+                    <h1>Queremos darte el mejor <span>servicio</span></h1>
+                </div>
+                <div class="about_tr">
+                    <p>Somos una empresa metalúrgica argentina con más de <strong>70 años</strong> en el mercado, dedicada a desarrollar soluciones innovadoras en <strong>ingeniería, diseño y fabricación</strong> de equipos y repuestos de precisión para diversas industrias.</p>
+                </div>
+            </div>
+            <div class="about_bottom">
+                <div class="about_img">
+                    <img src="img/about.jpg" alt="">
+                </div>
+                <div class="about_content">
+                    <div class="about_content_box">
+                        <div class="about_box_img">
+                            <img src="img/about-icon-1.png" alt="">
+                        </div>
+                        <div class="about_box_text">
+                            <h2>Compromiso con la Innovación y Precisión</h2>
+                            <p> Nuestro enfoque innovador garantiza soluciones a medida con altos estándares de calidad y eficiencia.</p>
+                        </div>
+                    </div>
+
+                    <div class="about_content_box">
+                        <div class="about_box_img">
+                            <img src="img/about-icon-2.png" alt="">
+                        </div>
+                        <div class="about_box_text">
+                            <h2> Experiencia y Tecnología al Servicio de la Industria</h2>
+                            <p> Combinamos trayectoria y tecnología de vanguardia para desarrollar equipos y repuestos de precisión.</p>
+                        </div>
+                    </div>
+
+                    <div class="about_content_box">
+                        <div class="about_box_img">
+                            <img src="img/about-icon-2.png" alt="">
+                        </div>
+                        <div class="about_box_text">
+                            <h2>Soluciones Metalmecánicas de Alta Precisión</h2>
+                            <p> Nuestro equipo de expertos trabaja con tecnología de precisión para garantizar rendimiento y durabilidad en cada producto.</p>
+                        </div>
+                    </div>
+                    <div class="about_btns" >
+                        <button>Descubre más <i class="ri-arrow-right-long-line"></i></button>
+                        <div class="nav_info">
+                            <img src="img/call.png" alt="">
+                            <div class="nav_det">
+                                <p>Llámanos ahora</p>
+                                <h3>+54 11 4542 7353</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Contenedor del Parque Industrial Pilar -->
-            <div class="col-12 col-md-6 mb-4">
-                <div class="card contact-card p-4 shadow-lg rounded-lg">
-                    <h5 class="font-weight-bold">Parque Industrial Pilar</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt text-primary mr-2"></i> Av. Frondizi 1945 (B1629), Provincia de Buenos Aires</li> 
-                    </ul>
-                    <!-- Mapa de Av. Frondizi 1945 -->
-                    <div class="map-container rounded-lg shadow-sm overflow-hidden">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.041249254532!2d-58.97480620130018!3d-34.440409343906296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc8263dd354b33%3A0xa1c70087ec48b3d3!2sParque%20Industrial%20Pilar!5e0!3m2!1ses!2sco!4v1738001914813!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+        </section>
+
+        
+        <!-- 
+         <section class="service">
+            <div class="title">
+                <div class="title_line"></div>
+                <h3>¿Quiénes Somos?</h3>
             </div>
-        </div>
-    </div>
-</section>
+            <h1>Queremos darte el mejor <span>servicio</span></h1>
+         </section>
+        -->
+        
 
+  
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <p>&copy; 2025 Mexell. Todos los derechos reservados.</p>
-    </div>
-</footer>
+    <!-- Swiper Slider Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <!-- GSAP Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>

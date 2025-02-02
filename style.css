@@ -430,9 +430,9 @@ header{
 }
 .logoSwiper{
     width: 74.2%;
-    height: 75px;
+    height: 60px;
     position: absolute !important;
-    top: 93.5%;
+    top: 94.7%;
     left: 62.85%;
     transform: translate(-50%, -50%);
     padding: 1.5% 2% !important;
@@ -454,8 +454,8 @@ header{
 
 .swiper-slide img {
     width: auto; /* Para que mantenga la proporción */
-    max-width: 100%; /* Para que no exceda su contenedor */
-    max-height: 80px; /* Ajusta según el tamaño deseado */
+    max-width: 90%; /* Para que no exceda su contenedor */
+    max-height: 90%; /* Ajusta según el tamaño deseado */
     object-fit: contain; /* Evita que la imagen se deforme */
   
 }

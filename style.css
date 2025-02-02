@@ -924,6 +924,73 @@ header{
 }
 
 
+/* Estilo para el botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    background-color: rgba(37, 211, 102, 0.3); /* Color sutil (marca de agua) */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s; /* Efecto de transición */
+}
+
+/* Efecto hover */
+.whatsapp-button:hover {
+    background-color: #25D366; /* Color de fondo normal al hacer hover */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al hacer hover */
+}
+
+/* Estilo del icono */
+.whatsapp-button img {
+    width: 40px; /* Tamaño del ícono */
+    height: 40px;
+    object-fit: contain;
+    transition: opacity 0.3s; /* Transición para la opacidad */
+}
+
+/* Estilo al hacer hover */
+.whatsapp-button:hover img {
+    opacity: 1; /* Opacidad completa al hacer hover */
+}
+
+
+/* Estilo del tooltip */
+.whatsapp-tooltip {
+    position: absolute;
+    top: -74px;  /* Mueve el texto hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #25D366; /* Fondo verde de WhatsApp */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    opacity: 0; /* Empieza invisible */
+    pointer-events: none; /* Evita que el texto interfiera con la interacción */
+    transition: opacity 0.3s; /* Transición suave */
+    visibility: hidden; /* Asegura que el texto no sea visible por defecto */
+    text-align: center;
+}
+.whatsapp-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;  /* Ubica la colita justo en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #25D366;  /* Color de la colita (igual al fondo de la burbuja) */
+}
+
+/* Mostrar el tooltip al hacer hover */
+.whatsapp-button:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* 🔹 RESPONSIVE DESIGN */
 @media (max-width: 900px) {
     .menu {

@@ -411,9 +411,15 @@ header{
 }
 
 .hero_client{
-    color: var(--white-color);
+    background-image: url(img/confian_en_nosotros.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-size: contain;
+    background-position: center center; 
+    background-repeat: no-repeat;    
     font-size: 4rem;
     line-height: 4rem;
+    display: flex;
 }
 .hero_client h2{
     font-size: 1.1rem;
@@ -991,26 +997,494 @@ header{
     visibility: visible;
 }
 
-/* 🔹 RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-    .menu {
-        display: none;
-        flex-direction: column;
+/* FOOTER SECTION */
+
+.subscribe_banner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--white-color);
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.subscribe_banner:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99%;
+    height: 90%;
+    border-radius: 50px;
+    background-image: var(--prim-gradient1);
+    z-index: -1;
+}
+
+.subscribe_banner button{
+    width: 250px;
+    background-image: none;
+    background-color: var(--text-color) !important;
+    border-color: var(--white-color);
+}
+
+
+.subscribe_banner button:after{
+    top: 20%;
+    left: 78%;
+    width: 30px;
+    height: 30px;
+}
+.subscribe_banner button:hover:after{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+
+
+
+
+
+
+.subscribe_banner input{
+    width: 80%;
+    height: 50px;
+    padding-left: 2%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: var(--black-color);
+    &::placeholder{
+        color: var(--text-color);
+    }
+}
+
+footer{
+    padding: 5% 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(img/footer-bg-1.png);
+    position: relative;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(131, 131, 131, 0.3);
+}
+
+.footer_img{
+    width: 25%;
+}
+
+.footer_img img{
+    width: 100%;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.footer_right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_right_head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo_text{
+    color: var(--white-color) !important;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.logo_text span{
+    color: var(--white-color) !important;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.footer_right_head p{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 200;
+}
+.footer_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: start;
+    place-items: start;
+    gap:50px
+}
+
+.footer_col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_col h2{
+ color: var(--white-color);
+ font-weight: 600;
+ text-transform: uppercase;
+ padding-bottom: 20px;
+
+}
+
+.footer_ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_li{
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(131, 131, 131, 0.5);  
+    position: relative;
+    cursor: pointer;
+}
+
+.footer_li a,
+.footer_li i{
+    font-size: 0.98rem;
+    color: #999;
+    transition: var(--transition2);
+}
+.footer_li:hover i{
+    display: inline-block;
+    color: var(--white-color);
+    transform: rotate(-30deg);
+}
+.footer_li:hover a{
+   
+    color: var(--white-color);
+    
+}
+
+.footer_li:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition2);
+}
+.footer_li:hover:after{
+    width: 100%;
+}
+
+.footer_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_bottom p{
+    color: var(--line-text);
+}
+
+.footer_bottom p a{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.footer_bottom_links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_bottom_links a{
+    color: #999;
+    transition: var(--transition);
+}
+
+.footer_bottom_links a:hover{
+   color: var(--primary-color);
+}
+
+@media (max-width:900px){
+    .bars{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(131, 131, 131, 0.5);
+        border-radius: 3px;
+    }
+    nav{
+        z-index: 999;
+        position: relative;
+    }
+    .menu{
         position: absolute;
-        top: 70px;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        padding: 20px 0;
+        opacity: 0;
+        visibility: hidden; /* Asegura que esté oculto al inicio */
+        background-color: white; /* Fondo visible */
+        border: 1px solid rgba(131, 131, 131, 0.5);
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+        display: flex; /* Asegura que se vea */
+    }
+    .menu li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu li a {
+        color: black; /* Cambia a un color visible */
+        font-size: 1.2rem;
+    }
+
+    .show_menu {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu li button{
+        display: none;
+    }
+
+    .header{
+        height: 100%;
+        background-position: top;
+    }
+    .hero_header,
+    section,
+    .about_top,
+    .about_bottom,
+    .footer_container{
+        flex-direction: column;
+    }
+
+    .hero_content,
+    .about_tl,
+    .about_tr,
+    .about_img,
+    .about_content,
+    .our_team_tl h1,
+    .banner_content,
+    .counters,
+    .banner_bg,
+    .counter_bg,
+    .com_benefit,
+    .com_img,
+    .sm_clients,
+    .marketing_marquee,
+    .test_content,
+    .blog_title,
+    .blog_head p,
+    .footer_right{
+        width: 100%;
+    }
+
+    .sm_client_content{
+        width: 200%;
+    }
+    .sm_client_card{
+        width: 100%;
+    }
+    .hero_content{
+        height: 460px;
+        margin-left: 30%;
+      
+    }
+    .hero_img{
+        width: 40%;
+    }
+    .hero_img img{
+        display: none;
+    }
+    .logoSwiper{
+        top: 94.6%;
+    }
+    .hero_client{
+        bottom: 8%;
+    }
+    .footer_img{
+        width: 30%;
+    }
+    .about_img {
+        text-align: center;
+    }
+    .about_img img {
+        display: inline-block; /* Evita que ocupe todo el ancho */
+    }
+    .service_info a{
+     
+        transform: translateY(145px);
+        transition: var(--transition2);
+        
+    }
+    .industries_top button{
+        width: 200px;
+    }
+    .industries_top button:after{
+        top: 20%;
+        left: 81%;
+        width: 30px;
+        height: 30px;
+    }
+    .industries_top button:hover:after{
+        top: 0;
         left: 0;
         width: 100%;
-        background-color: var(--secondary-color);
-        text-align: center;
-        padding: 15px 0;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        border-radius: 20%;
     }
-
-    .menu.active {
-        display: flex;
+    .subscribe_banner button{
+        width: 250px;
+        background-image: none;
+        background-color: var(--text-color) !important;
+        border-color: var(--white-color);
     }
+    
+    .subscribe_banner button:after{
+        top: 20%;
+        left: 81%;
+        width: 30px;
+        height: 30px;
+    }
+    .subscribe_banner button:hover:after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+    }
+ 
+}
 
-    .bars {
+@media (max-width:768px){
+    .industries_top button{
+        width: 250px;
+    }
+    .industries_top button:after{
+        top: 20%;
+        left: 81%;
+        width: 30px;
+        height: 30px;
+    }
+    .industries_top button:hover:after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    .subscribe_banner button:after{
+        top: 20%;
+        left: 82%;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:500px){
+    header{
+        background-position: top;
+        background-size: cover;
+    }
+    .hero_btns{
+        flex-direction: column;
+    }
+    .services_cards{
         display: block;
     }
+    .hero_content h1{
+        font-size: 2.5rem;
+    }
+    .hero_content{
+        height: 460px;
+        margin-left: 40%;
+    }
+    .hero_client{
+        top: 89.5%;
+        height: 50px;
+    }
+    .logoSwiper{
+        top: 95.8%;
+        height: 9%;
+    }
+
+    .industries_top button{
+        font-size: 0.6rem;
+        width: 200px;
+    }
+    .industries_top button:after{
+        top: 20%;
+        left: 81%;
+        width: 30px;
+        height: 30px;
+    }
+    .industries_top button:hover:after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    .subscribe_banner button{
+        font-size: small;
+        width: 250px;
+        background-image: none;
+        background-color: var(--text-color) !important;
+        border-color: var(--white-color);
+    }
+    
+    .subscribe_banner button:after{
+        top: 20%;
+        left: 77.5%;
+        width: 30px;
+        height: 30px;
+    }
+    .subscribe_banner button:hover:after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    .subscribe_banner input{
+        font-size: small;
+    }
+  
+
 }

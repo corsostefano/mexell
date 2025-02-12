@@ -15,3 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+const bar = document.querySelector('.bars');
+
+const menu = document.querySelector('.menu');
+
+bar.addEventListener('click', () => {
+    menu.classList.toggle('show_menu');
+});
